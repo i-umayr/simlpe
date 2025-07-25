@@ -161,7 +161,7 @@ class MoGaze3DEval(data.Dataset):
         self.shift_step = config.shift_step
         
         # For evaluation, we might want to use all participants or specific test set
-        self.test_participants = ['p6_1', 'p7_1']  # Example test participants
+        self.test_participants = ['p7_1', 'p7_3']  # Example test participants
         self._mogaze_files = self._get_test_files()
         self._collect_all()
         self._file_length = len(self.data_idx)
